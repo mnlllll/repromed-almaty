@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "repromed-almaty",
+  "main": "worker/index.ts",
+  "compatibility_date": "2025-11-01",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"]
+  }
+  // Для постоянного хранения записей пациентов и отзывов создайте KV Namespace в Cloudflare
+  // и раскомментируйте блок ниже, указав свой id:
+  // ,
+  // "kv_namespaces": [
+  //   {
+  //     "binding": "REPROMED_STORE",
+  //     "id": "YOUR_CLOUDFLARE_KV_NAMESPACE_ID"
+  //   }
+  // ]
+}

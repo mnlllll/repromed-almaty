@@ -1,0 +1,6 @@
+{
+  "name": "ЭмирМед Репродукция",
+  "description": "Центр репродукции человека и ВРТ в Казахстане: онлайн-запись на прием, личный кабинет пациента, 3D-атлас эмбриологии и push-напоминания о визитах.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
