@@ -1,0 +1,139 @@
+{
+  "patients": [
+    {
+      "id": "pat-demo-01",
+      "fullName": "Нурланова Айгерим Маратовна",
+      "phone": "+7 (701) 760-85-20",
+      "email": "aigerim.n@example.kz",
+      "iin": "920415450821",
+      "preferredBranch": "reproduction",
+      "passwordHash": "f0ac9d8d7b1e8a19939dadb7e7804f0ef715fadfd2f57f8b55cd4a199a416b92",
+      "notificationSettings": {
+        "pushEnabled": true,
+        "leadMinutes": 120,
+        "notifyOnBooking": true,
+        "notifyOnResults": true
+      }
+    }
+  ],
+  "sessions": {
+    "ed6a44b9-1004-41a2-ad9c-971190d2e995": "pat-demo-01",
+    "08081829-bebf-4042-bc8c-fb66ef9605c6": "pat-demo-01"
+  },
+  "appointments": [
+    {
+      "id": "apt-1001",
+      "patientId": "pat-demo-01",
+      "patientName": "Нурланова Айгерим Маратовна",
+      "patientPhone": "+7 (701) 760-85-20",
+      "branchId": "diagnostics",
+      "branchCity": "Репро-Мед · пр. Райымбека, 150",
+      "serviceId": "srv-ultrasound-all",
+      "serviceTitle": "Экспертное УЗИ (Samsung H-60) и пренатальный скрининг",
+      "doctorId": "doc-sailaukhan",
+      "doctorName": "Сайлаухан Гульназ Сайлауханкызы",
+      "dateISO": "2026-11-16",
+      "timeSlot": "11:30",
+      "priceKzt": 9000,
+      "status": "confirmed",
+      "reminderEnabled": true,
+      "reminderLeadMinutes": 120,
+      "reminderSent": false,
+      "notes": "УЗИ органов малого таза и контроль фолликулогенеза, 1-й этаж",
+      "createdAt": "2026-11-12T10:45:21.419Z"
+    },
+    {
+      "id": "apt-1002",
+      "patientId": "pat-demo-01",
+      "patientName": "Нурланова Айгерим Маратовна",
+      "patientPhone": "+7 (701) 760-85-20",
+      "branchId": "reproduction",
+      "branchCity": "Репро-Мед · пр. Райымбека, 150",
+      "serviceId": "srv-gynecology",
+      "serviceTitle": "Прием гинеколога-репродуктолога и сохранение беременности",
+      "doctorId": "doc-baibossynova",
+      "doctorName": "Байбосынова Марьям Бежановна",
+      "dateISO": "2026-11-05",
+      "timeSlot": "15:30",
+      "priceKzt": 11000,
+      "status": "completed",
+      "reminderEnabled": true,
+      "reminderLeadMinutes": 1440,
+      "reminderSent": true,
+      "notes": "Назначено кариотипирование и контрольное УЗИ",
+      "createdAt": "2026-11-03T10:45:21.419Z"
+    }
+  ],
+  "labResultsByPatient": {
+    "pat-demo-01": [
+      {
+        "id": "res-01",
+        "title": "Кариотипирование (хромосомный анализ, 5 дней)",
+        "dateLabel": "12 ноя 2026",
+        "doctorName": "Аяпова С. К.",
+        "value": "46, XX",
+        "unit": "Норма",
+        "referenceRange": "Без структурных перестроек",
+        "status": "ready",
+        "statusLabel": "Готово за 5 дней",
+        "comment": "Нормальный женский кариотип, хромосомных аномалий не выявлено."
+      },
+      {
+        "id": "res-02",
+        "title": "Биопсия эндометрия (результат в тот же день)",
+        "dateLabel": "10 ноя 2026",
+        "doctorName": "Байбосынова М. Б.",
+        "value": "Пролиферация",
+        "unit": "",
+        "referenceRange": "Без атипии",
+        "status": "normal",
+        "statusLabel": "Готово в день сдачи",
+        "comment": "Атипические клетки отсутствуют, эндометрий соответствует фазе цикла."
+      },
+      {
+        "id": "res-03",
+        "title": "Экспертное УЗИ малого таза (Samsung H-60)",
+        "dateLabel": "08 ноя 2026",
+        "doctorName": "Сайлаухан Г. С.",
+        "value": "9.2",
+        "unit": "мм (эндометрий)",
+        "referenceRange": "8.0 – 13.0 мм",
+        "status": "normal",
+        "statusLabel": "В норме",
+        "comment": "Трехслойная структура эндометрия, фолликулярный аппарат сохранен."
+      }
+    ]
+  },
+  "reviews": [
+    {
+      "id": "rev-2gis-1",
+      "author": "Айгуль и Марат С.",
+      "rating": 5,
+      "dateLabel": "Октябрь 2026",
+      "program": "Кариотипирование · 5 дней",
+      "doctor": "Аяпова С. К.",
+      "text": "Обратились в «Репро-Мед» на Райымбека, 150 после долгого поиска причины невынашивания. Кариотипирование сделали за 5 дней, Сауле Калкамановна подробно все разъяснила, а цены оказались ниже, чем в других центрах.",
+      "source": "2gis"
+    },
+    {
+      "id": "rev-2gis-2",
+      "author": "Камилла Т.",
+      "rating": 5,
+      "dateLabel": "Сентябрь 2026",
+      "program": "Биопсия и пренатальное УЗИ",
+      "doctor": "Байбосынова М. Б.",
+      "text": "Очень переживала перед биопсией ворсин хориона, но врачи и медсестры отнеслись максимально бережно. Результат выдали в тот же день, все чисто и стерильно.",
+      "source": "2gis"
+    },
+    {
+      "id": "rev-2gis-3",
+      "author": "Руслан Н.",
+      "rating": 5,
+      "dateLabel": "Август 2026",
+      "program": "Уролог-андролог · Процедурный кабинет",
+      "doctor": "Арепьев В. Э.",
+      "text": "Проходил обследование у уролога-андролога и курс капельниц в процедурном кабинете — удобно, что кабинет работает до вечера и по воскресеньям.",
+      "source": "2gis"
+    }
+  ]
+}
